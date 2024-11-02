@@ -3,6 +3,7 @@
   --paper: #eff6e0;
   --ink: #01161e;
   --brand: #1006d77;
+  --header:#aec3b0;
   --font: "Itim", system-ui, sans-serif;
   --gap: 20px;
   --container: clamp(280px, calc(100vw - calc(var(--gap) * 2)), 1180px);
@@ -17,10 +18,17 @@ body {
 }
 body {
   display: grid;
+  text-align: justify;
   margin: auto;
-  min-height: 100vh;
+  min-height: 200vh;
   gap: var(--gap);
   max-width: var(--container);
+  
+  
+  
+}
+main{
+  padding: 2rem; 
 }
 a,
 a:any-link {
@@ -31,18 +39,19 @@ a:any-link {
 }
 a:hover,
 a:focus {
-  color: var(--brand);
+  color: #e36414;
   border-color: currentColor;
 }
 /* Site header and navigation */
 body > header {
-  background: var(--paper);
+  background: var(--header);
   display: flex;
   justify-content: space-between;
-  align-items: center;
   position: sticky;
-  top: 0;
+  padding: 2rem;
   z-index: 1;
+  border-radius: 4%;
+  
 }
 nav ul {
   display: flex;
@@ -50,8 +59,23 @@ nav ul {
   gap: var(--gap);
 }
 
+/* subheader style*/
+header {
+  background: var(--header);
+  padding: 1rem;
+  border-radius: 4%;
+  
+}
+
 /* Text readability */
 section p {
   line-height: 1.5;
-  max-width: 55ch;
+}
+
+/* button style*/
+button{
+  padding: 0.8rem;
+  margin: 1rem;
+  border-radius: 15%;
+  background-color: var(--header);
 }
