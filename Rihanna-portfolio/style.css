@@ -16,6 +16,7 @@ body {
   color: var(--ink);
   font-family: var(--font);
 }
+
 body {
   display: grid;
   text-align: justify;
@@ -23,13 +24,12 @@ body {
   min-height: 200vh;
   gap: var(--gap);
   max-width: var(--container);
-  
-  
-  
 }
+
 main{
   padding: 2rem; 
 }
+
 a,
 a:any-link {
   color: var(--brand);
@@ -37,10 +37,13 @@ a:any-link {
   border-bottom: 2px solid transparent;
   transition: border-color ease-in-out 0.3s;
 }
+
+button:hover,
 a:hover,
 a:focus {
   color: #e36414;
   border-color: currentColor;
+  cursor: pointer;
 }
 /* Site header and navigation */
 body > header {
@@ -51,18 +54,19 @@ body > header {
   padding: 2rem;
   z-index: 1;
   border-radius: 4%;
-  
 }
+
 nav ul {
   display: flex;
   list-style: none;
   gap: var(--gap);
+  font-weight: bold;
 }
 
 /* subheader style*/
 header {
   background: var(--header);
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 4%;
   
 }
@@ -74,8 +78,8 @@ section p {
 
 /* button style*/
 button{
-  padding: 0.8rem;
-  margin: 1rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
   border-radius: 15%;
   background-color: var(--header);
 }
